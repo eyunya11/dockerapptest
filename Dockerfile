@@ -25,4 +25,5 @@ COPY --from=builder /app/hello_world_d .
 RUN chmod +x hello_world_d
 
 # コンテナ起動時のデフォルトコマンド
-CMD ["./hello_world_d"]
+# 実行ファイルを実行後、無限待機
+CMD ["sh", "-c", "./hello_world_d && tail -f /dev/null"]
