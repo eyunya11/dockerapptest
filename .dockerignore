@@ -1,0 +1,9 @@
+# ビルド成果物
+obj/
+*.o
+hello_world_d
+
+# その他
+.git/
+.gitignore
+*.md
