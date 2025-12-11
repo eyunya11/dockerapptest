@@ -1,11 +1,6 @@
+#include "hello_world.h"
 #include <iostream>
 
-int main()
-{
-    for(int i = 0; i < 10; i++)
-    {
-        std::cout << "Hello!!" << i << std::endl;
-    }
-    std::cout << "Hello World" << std::endl;
-    return 0;
+void printHelloWorld() {
+    std::cout << "Hello Linux" << std::endl;
 }
